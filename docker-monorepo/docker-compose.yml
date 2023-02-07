@@ -4,12 +4,13 @@ services:
   web:
     build: .
     volumes:
-      - ./projects/web:/home/app
+      - ../projects/web:/home/app
     ports:
       - 9900:3000
+
   core:
     build: .
     volumes:
-      - ./projects/core:/home/app
+      - ../projects/core:/home/app
     ports:
       - 9901:3000
