@@ -1,0 +1,10 @@
+version: "3.5"
+
+services:
+  app:
+    build: .
+    volumes:
+      - ../:/home/app
+    ports:
+      - 9900:3000
+      - 9901:3001
