@@ -2,15 +2,20 @@
   "name": "app",
   "version": "1.0.0",
   "description": "",
+  "private": true,
   "main": "index.js",
-  "workspaces": [
-    "@onlytests/eslint",
-    "@onlytests/jest",
-    "@onlytests/web",
-    "@onlytests/core"
-  ],
+  "workspaces": {
+    "packages": [
+      "projects/*",
+      "setup/*",
+      "packages/*"
+    ]
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "core": "yarn workspace @onlytests/core",
+    "test:core": "yarn core test",
+    "web": "yarn workspace @onlytests/web",
+    "lint:web": "yarn web lint"
   },
   "repository": {
     "type": "git",
@@ -21,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/dtnetwork-rpereira/monorepo_js/issues"
   },
-  "homepage": "https://github.com/dtnetwork-rpereira/monorepo_js#readme"
+  "homepage": "https://github.com/dtnetwork-rpereira/monorepo_js#readme",
+  "dependencies": {
+    "@onlytests/core": "^1.0.0",
+    "@onlytests/web": "^1.0.0"
+  }
 }
