@@ -12,10 +12,18 @@
     ]
   },
   "scripts": {
+    "build": "yarn workspaces run build",
+    "test": "yarn workspaces run test",
     "core": "yarn workspace @onlytests/core",
-    "test:core": "yarn core test",
+    "core:lint": "yarn core lint",
+    "core:test": "yarn core test",
+    "core:dev": "PORT=3001 yarn core start:debug",
+    "core:start": "yarn core start:prod",
     "web": "yarn workspace @onlytests/web",
-    "lint:web": "yarn web lint"
+    "web:lint": "yarn web lint",
+    "web:test": "yarn web lint",
+    "web:dev": "yarn web dev",
+    "web:start": "yarn web start"
   },
   "repository": {
     "type": "git",

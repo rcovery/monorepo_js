@@ -1,11 +1,17 @@
 {
-  "name": "@onlytests/jest",
+  "name": "@onlytests/prettier",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "echo \"Test is not necessary\"",
     "build": "echo \"Build is not necessary\""
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0"
   },
   "author": "",
   "license": "ISC"

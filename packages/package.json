@@ -1,8 +1,7 @@
 {
-  "name": "@onlytests/jest",
+  "name": "@onlytests/packages",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Test is not necessary\"",
     "build": "echo \"Build is not necessary\""
