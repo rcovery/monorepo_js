@@ -1,0 +1,15 @@
+{
+  "name": "@onlytests/tsconfig",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.json",
+  "files": [
+    "index.json"
+  ],
+  "scripts": {
+    "test": "echo \"Test is not necessary\"",
+    "build": "echo \"Build is not necessary\""
+  },
+  "author": "",
+  "license": "ISC"
+}

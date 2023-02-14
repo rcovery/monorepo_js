@@ -16,9 +16,6 @@
     "@types/react-dom": "18.0.10",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
-    "@onlytests/eslint": "^1.0.0",
-    "@onlytests/prettier": "^1.0.0",
-    "@onlytests/jest": "^1.0.0",
     "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -30,6 +27,8 @@
     "jest": "^29.4.2",
     "jest-environment-jsdom": "^29.4.2",
     "@onlytests/prettier": "^1.0.0",
+    "@onlytests/jest": "^1.0.0",
+    "@onlytests/tsconfig": "^1.0.0",
     "@onlytests/eslint": "^1.0.0"
   }
 }

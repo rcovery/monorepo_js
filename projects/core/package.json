@@ -39,6 +39,7 @@
     "@onlytests/eslint": "^1.0.0",
     "@onlytests/prettier": "^1.0.0",
     "@onlytests/jest": "^1.0.0",
+    "@onlytests/tsconfig": "^1.0.0",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
