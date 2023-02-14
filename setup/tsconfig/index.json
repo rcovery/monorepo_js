@@ -1,15 +1,17 @@
 {
-  "skipLibCheck": true,
-  "incremental": true,
-  "noImplicitAny": true,
-  "allowJs": false,
-  "removeComments": true,
-  "strictNullChecks": false,
-  "strictBindCallApply": false,
-  "resolveJsonModule": true,
-  "moduleResolution": "node",
-  "forceConsistentCasingInFileNames": true,
-  "esModuleInterop": true,
-  "isolatedModules": true,
-  "noFallthroughCasesInSwitch": false
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "incremental": true,
+    "noImplicitAny": true,
+    "allowJs": false,
+    "removeComments": true,
+    "strictNullChecks": false,
+    "strictBindCallApply": false,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "noFallthroughCasesInSwitch": false
+  }
 }
