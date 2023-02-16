@@ -1,6 +1,4 @@
 ## ToDo
 
-NPM workspaces
-Lint default
-Tests default
-Actions Configuration
+- Tests default
+- Husky
