@@ -1,0 +1,23 @@
+name: "(CI) Main Workflow"
+
+on:
+  push:
+    branches: ["main"]
+
+paths:
+  - '**.js'
+
+jobs:
+  Running-On-Ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.3.0
+
+      - name: Installing dependencies
+      run: yarn install
+
+      - name: Running Lint
+      run: yarn lint
+      
+      - name: Running Tests
+      run: yarn test
