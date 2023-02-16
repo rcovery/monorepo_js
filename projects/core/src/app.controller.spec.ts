@@ -20,7 +20,7 @@ describe('AppController', () => {
     });
 
     it('should return "Test project with monorepo!"', () => {
-      expect(appController.getHello()).toBe('Test project with monorepo!!');
+      expect(appController.getAbout()).toBe('Test project with monorepo!');
     });
   });
 });
