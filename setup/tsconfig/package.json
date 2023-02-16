@@ -8,7 +8,8 @@
   ],
   "scripts": {
     "test": "echo \"Test is not necessary\"",
-    "build": "echo \"Build is not necessary\""
+    "build": "echo \"Build is not necessary\"",
+    "lint": "echo \"Lint is not necessary\""
   },
   "author": "",
   "license": "ISC"
