@@ -7,6 +7,6 @@ export class AppService {
   }
 
   getAbout(): string {
-    return '<h4>This is a test project using monorepo!</h4>';
+    return 'Test project with monorepo!';
   }
 }
