@@ -1,4 +1,3 @@
 ## ToDo
 
 - Tests default
-- Husky
