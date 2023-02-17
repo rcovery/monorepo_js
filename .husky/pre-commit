@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-yarn lint
-yarn test
+if [[ -e yarn ]];then
+    yarn lint
+    yarn test
+fi
