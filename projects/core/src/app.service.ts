@@ -9,4 +9,8 @@ export class AppService {
   getAbout(): string {
     return 'Test project with monorepo!';
   }
+
+  getCareers(): string {
+    return 'It worked!';
+  }
 }
