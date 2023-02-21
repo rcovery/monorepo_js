@@ -2,11 +2,11 @@ module.exports = {
   apps: [
     {
       name: "web",
-      script: "yarn web:start",
+      script: "yarn web:dev",
     },
     {
       name: "core",
-      script: "yarn core:start",
+      script: "yarn core:dev",
       env: {
         PORT: 3001,
       },
