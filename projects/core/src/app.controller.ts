@@ -14,4 +14,9 @@ export class AppController {
   getAbout(): string {
     return this.appService.getAbout();
   }
+
+  @Get('/careers')
+  getCareers(): string {
+    return this.appService.getCareers();
+  }
 }

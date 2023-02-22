@@ -3,3 +3,4 @@
 ## ToDo
 
 - Tests default
+- Editor config
