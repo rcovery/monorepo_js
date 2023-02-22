@@ -15,6 +15,8 @@
     "build": "yarn workspaces run build",
     "test": "yarn workspaces run test",
     "lint": "yarn workspaces run lint",
+    "dev": "bash scripts/start.dev.sh",
+    "start": "bash scripts/start.prod.sh",
     "core": "yarn workspace @onlytests/core",
     "core:build": "yarn core build",
     "core:lint": "yarn core lint",
