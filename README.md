@@ -2,6 +2,6 @@
 
 ## ToDo
 
-- Start dev script
 - Tests default
 - Editor config
+- Bot to get build URL
