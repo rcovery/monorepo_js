@@ -19,7 +19,7 @@
     "core:build": "yarn core build",
     "core:lint": "yarn core lint",
     "core:test": "yarn core test",
-    "core:dev": "PORT=3001 yarn core start:debug",
+    "core:dev": "PORT=3001 yarn core start:dev",
     "core:start": "yarn core start:prod",
     "web": "yarn workspace @onlytests/web",
     "web:build": "yarn web build",
