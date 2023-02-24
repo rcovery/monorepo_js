@@ -2,7 +2,7 @@ name: "(CI) Main Workflow"
 
 on:
   push:
-    branches: ["master"]
+    branches: ["dev"]
     paths: ["**.ts", "**.tsx", "**.json"]
   pull_request:
 

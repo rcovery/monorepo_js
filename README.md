@@ -2,6 +2,6 @@
 
 ## ToDo
 
-- Tests default
-- Editor config
-- Bot to get build URL
+- [CD] Add digitalocean
+- [CD] Get build URL and add a comment in pullrequest
+- [CD] Create development droplet
