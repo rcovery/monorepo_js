@@ -2,7 +2,6 @@ name: "(CI) Main Workflow"
 
 on:
   pull_request:
-    paths: ["**.ts", "**.tsx", "**.json"]
 
 jobs:
   Running-On-Ubuntu:
