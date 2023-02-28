@@ -8,6 +8,7 @@ on:
 jobs:
   Running-On-Ubuntu:
     runs-on: ubuntu-latest
+    environment: Development
     steps:
       - uses: actions/checkout@v3.3.0
 
@@ -21,13 +22,6 @@ jobs:
         uses: montudor/action-zip@v1.0.0
         with:
           args: zip -qq -r onlytests.zip node_modules ecosystem.config.js dev.ecosystem.config.js package.json scripts
-
-      - name: "Showing priv key"
-        run: echo ${{ secrets.PRIV_KEY }}
-      - name: "Showing user"
-        run: echo ${{ secrets.USERNAME }}
-      - name: "Showing host"
-        run: echo ${{ secrets.HOST }}
 
       - name: SCP Command to Transfer Files
         uses: appleboy/scp-action@v0.1.3
