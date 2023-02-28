@@ -24,8 +24,15 @@ describe('AppController (e2e)', () => {
 
   it('/about (GET)', () => {
     return request(app.getHttpServer())
-      .get('/')
+      .get('/about')
       .expect(200)
       .expect('Test project with monorepo!');
+  });
+
+  it('/careers', () => {
+    return request(app.getHttpServer())
+      .get('/careers')
+      .expect(200)
+      .expect('It worked!');
   });
 });
