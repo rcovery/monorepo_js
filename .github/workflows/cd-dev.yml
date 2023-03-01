@@ -3,7 +3,7 @@ name: "(CD) (DEV)"
 on:
   push:
     branches: ["dev"]
-    paths: ["**.ts", "**.tsx", "**.json"]
+    # paths: ["**.ts", "**.tsx", "**.json"]
 
 jobs:
   Running-On-Ubuntu:
@@ -21,7 +21,13 @@ jobs:
       - name: Zipping project
         uses: montudor/action-zip@v1.0.0
         with:
-          args: zip -qq -r onlytests.zip node_modules ecosystem.config.js dev.ecosystem.config.js package.json projects scripts
+          args: zip -qq -r onlytests.zip |
+            node_modules
+            ecosystem.config.js
+            dev.ecosystem.config.js
+            package.json
+            projects
+            scripts
 
       - name: SCP Command to Transfer Files
         uses: appleboy/scp-action@v0.1.3
