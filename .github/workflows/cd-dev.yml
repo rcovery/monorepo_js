@@ -18,15 +18,18 @@ jobs:
       - name: Building
         run: yarn build
 
-      - name: Zipping project
-        uses: montudor/action-zip@v1.0.0
+      - name: Tar action
+        uses: a7ul/tar-action@v1.1.2
+        id: compress
         with:
-          args: zip -qq -r onlytests.zip |
+          command: c
+          files: |
             node_modules
             ecosystem.config.js
             package.json
             projects
             scripts
+          outPath: onlytests.tarzan
 
       - name: SCP Command to Transfer Files
         uses: appleboy/scp-action@v0.1.3
@@ -34,7 +37,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PRIV_KEY }}
-          source: "onlytests.zip"
+          source: "onlytests.tarzan"
           target: "~/"
 
       - name: SSH Remote Commands
@@ -44,7 +47,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PRIV_KEY }}
           script: |
-            unzip -qq onlytests.zip -d onlytests
+            tar -C onlytests -xf onlytests.tarzan
             cd onlytests
             pm2 stop all
             pm2 start all
