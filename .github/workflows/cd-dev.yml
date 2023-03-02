@@ -49,5 +49,5 @@ jobs:
           script: |
             tar -C onlytests -xf onlytests.tarzan
             cd onlytests
-            pm2 stop all
+            pm2 stop all 2> /dev/null
             pm2 start all
