@@ -24,7 +24,6 @@ jobs:
           args: zip -qq -r onlytests.zip |
             node_modules
             ecosystem.config.js
-            dev.ecosystem.config.js
             package.json
             projects
             scripts
@@ -36,7 +35,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PRIV_KEY }}
           source: "onlytests.zip"
-          target: "onlytests"
+          target: "~/"
 
       - name: SSH Remote Commands
         uses: appleboy/ssh-action@v0.1.7
@@ -45,6 +44,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PRIV_KEY }}
           script: |
+            unzip -qq onlytests.zip -d onlytests
             cd onlytests
-            unzip -qq onlytests.zip
-            pm2 restart
+            pm2 stop all
+            pm2 start all
