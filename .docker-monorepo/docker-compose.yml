@@ -2,9 +2,21 @@ version: "3.5"
 
 services:
   app:
+    container_name: "monorepo"
     build: .
     volumes:
       - ../:/home/app
     ports:
       - 9900:3000
       - 9901:3001
+  db:
+    container_name: "monorepo_db"
+    image: mysql:8-debian
+    environment:
+      MYSQL_ROOT_PASSWORD: strawberry
+      MYSQL_ROOT_USER: bigsmoke
+      MYSQL_PASSWORD: pineapple
+      MYSQL_USER: carljohnson
+      MYSQL_DATABASE: onlytests
+    ports:
+      - 9902:3306
